@@ -40,8 +40,13 @@
 <h2>Analytics</h2>
 <p>The app includes an analytics system that can log which features are used (for example, "a breathing session was completed" or "dark mode was turned on"). These events carry only structural information — counts, durations, and fixed categories like mood type — never your journal text, thoughts, birth date, or name. Any user identifier included is a one-way cryptographic hash, not your actual account ID.</p>
 
-<h2>Data deletion</h2>
-<p>You can delete all of your logged activity at any time from <strong>Account → Delete My Data</strong>, or permanently delete your account and all associated data from <strong>Account → Delete Account</strong>. Account deletion cannot be undone.</p>
+<h2 id="data-deletion">Data deletion — Calm &amp; Clear (by GMRT Apps)</h2>
+<p>Calm &amp; Clear gives you two ways to remove your data, both available directly in the app under <strong>Account</strong> (bottom navigation → Settings icon):</p>
+<ul>
+  <li><strong>Delete My Data</strong> — open the app, go to <em>Account → Delete My Data</em>, and confirm. This immediately erases all of your logged activity: mood and stress check-ins, session history, journal/reflection and reframing text, goals, Basics lesson progress, Pomodoro sessions, and your saved zip code. Your account itself is kept (so you can keep using the app with a clean slate); your optional display name and date of birth are also kept, since they're used for the app's compliance/age-gate check rather than logged activity.</li>
+  <li><strong>Delete Account</strong> — open the app, go to <em>Account → Delete Account</em>, and confirm. This permanently deletes your account and every category of data listed above, with no retention period — the deletion is immediate and cannot be undone. You'll be signed out and a new anonymous session will start if you continue using the app.</li>
+</ul>
+<p>If you no longer have the app installed and want your data deleted, email <a href="mailto:antrone.turner@gmail.com">antrone.turner@gmail.com</a> from the email address associated with your account (or describe your display name/account details) and we will delete your account and data manually within a few days.</p>
 
 <h2>Data storage and security</h2>
 <p>Your data is stored with Supabase, a hosted database provider, using row-level security so that only your own account can read or write your data. Data is transmitted over encrypted HTTPS connections.</p>
